@@ -1,0 +1,98 @@
+{
+  "jogos": [
+    {
+      "id": 1,
+      "name": "Doom The Dark Ages",
+      "description": "Desça o cacete em capeta. Rip and Tear!",
+      "publisher": "Bethesda",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/2/2c/DOOM_The_Dark_Ages.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Clair Obscure - Expedition 33",
+        "description": "RPG francês  de ação e aventura",
+        "publisher": "Kepler Interactive",
+        "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/15dd9f9368aa87c9b2dcaf58e1856e8cca01b6e595331858.jpg"
+    },
+    {
+        "id": 3,
+        "name": "The Legend of Zelda: Tears of the Kingdom",
+        "description": "A continuação de Breath of the Wild",
+        "publisher": "Nintendo",
+        "image": "https://m.media-amazon.com/images/I/618GR0WMoQL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+        "id": 4,
+        "name": "Hogwarts Legacy",
+        "description": "O jogo de Harry Potter que você sempre quis",
+        "publisher": "Warner Bros. Games",
+        "image": "https://m.media-amazon.com/images/I/81b1k2d8J6L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Braveheart Chronicles",
+        "description": "Um jogo beat'em up brasileiro de ação e aventura",
+        "publisher": "Laboratório.CE"
+    }
+  ],
+  "filmes" : [
+    {
+      "id": 1,
+      "name": "Ainda Estou Aqui",
+      "description": "Melhor filme do ano, injusticado por Emilia Perez",
+      "publisher": "Globo",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/5/57/Ainda_Estou_Aqui_2024_poster.jpg"
+    },
+    {
+      "id": 2,
+      "name": "O Senhor dos Anéis: A Sociedade do Anel",
+      "description": "A jornada épica começa",
+      "publisher": "New Line Cinema",
+      "image": "https://br.web.img3.acsta.net/medias/nmedia/18/92/91/32/20224832.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Matrix",
+      "description": "A realidade é uma ilusão",
+      "publisher": "Warner Bros.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+        "id": 4,
+        "name": "O Poderoso Chefão",
+        "description": "A história de uma família mafiosa",
+        "publisher": "Paramount Pictures",
+        "image": "https://mid-noticias.curitiba.pr.gov.br/2022/00337449.jpg"
+    }
+  ],
+  "livros": [
+    {
+      "id": 1,
+      "name": "Berserk",
+      "description": "A melhor história de todos os tempos",
+      "publisher": "Dark Horse",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/4/45/Berserk_vol01.jpg"
+    },
+    {
+      "id": 2,
+      "name": "O Hobbit",
+      "description": "Uma aventura épica de J.R.R. Tolkien",
+      "publisher": "HarperCollins",
+      "image": "https://m.media-amazon.com/images/I/91M9xPIf10L.jpg"
+    },
+    {
+      "id": 3,
+      "name": "1984",
+      "description": "Um clássico distópico de George Orwell",
+      "publisher": "Secker & Warburg",
+      "image": "https://m.media-amazon.com/images/I/819js3EQwbL.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dom Casmurro",
+        "description": "Um romance brasileiro clássico de Machado de Assis",
+        "publisher": "Companhia das Letras",
+        "image": "https://m.media-amazon.com/images/I/61Z2bMhGicL.jpg"
+    }
+  ]
+}
