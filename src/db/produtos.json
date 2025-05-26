@@ -32,7 +32,8 @@
         "id": 5,
         "name": "Braveheart Chronicles",
         "description": "Um jogo beat'em up brasileiro de ação e aventura",
-        "publisher": "Laboratório.CE"
+        "publisher": "Laboratório.CE",
+        "image": "/assets/images/braveheart-chronicles.png"
     }
   ],
   "filmes" : [
