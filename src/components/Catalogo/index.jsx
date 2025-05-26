@@ -1,6 +1,6 @@
 import Card from "../Card";
 
-const Catalogo = ({ lista, onDelete }) => {
+const Catalogo = ({ lista, onDelete, onEdit }) => {
     return (
         <ul className="flex justify-center flex-wrap gap-8">
             {lista.map(item => (
@@ -8,6 +8,7 @@ const Catalogo = ({ lista, onDelete }) => {
                     key={item.id}
                     item={item}
                     onDelete={onDelete}
+                    onEdit={onEdit}
                 />
             ))}
         </ul>

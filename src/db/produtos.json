@@ -8,39 +8,39 @@
       "image": "https://upload.wikimedia.org/wikipedia/pt/2/2c/DOOM_The_Dark_Ages.jpeg"
     },
     {
-        "id": 2,
-        "name": "Clair Obscure - Expedition 33",
-        "description": "RPG francês  de ação e aventura",
-        "publisher": "Kepler Interactive",
-        "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/15dd9f9368aa87c9b2dcaf58e1856e8cca01b6e595331858.jpg"
+      "id": 2,
+      "name": "Clair Obscure - Expedition 33",
+      "description": "RPG francês  de ação e aventura",
+      "publisher": "Kepler Interactive",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/15dd9f9368aa87c9b2dcaf58e1856e8cca01b6e595331858.jpg"
     },
     {
-        "id": 3,
-        "name": "The Legend of Zelda: Tears of the Kingdom",
-        "description": "A continuação de Breath of the Wild",
-        "publisher": "Nintendo",
-        "image": "https://m.media-amazon.com/images/I/618GR0WMoQL._AC_UF1000,1000_QL80_.jpg"
-        },
-        {
-        "id": 4,
-        "name": "Hogwarts Legacy",
-        "description": "O jogo de Harry Potter que você sempre quis",
-        "publisher": "Warner Bros. Games",
-        "image": "https://imgs.search.brave.com/nDu6I55n4ix0Ly6O3mQxMc07H7So0hTqydPVBRpE-JU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vcHlSVWc5/WkxfTGxyWUZWOGU1/Vk1oSUc4cFhIS2Vx/dkFMLUVtTG1aYzEz/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlo/YzNObC9kSE11Ym5W/MWRtVnRMbU52L2JT/OXBiV0ZuWlM5MWNH/eHYvWVdRdmRGOWli/M2h6YUc5MC9YMkpw/Wnk5Mk1TOXdjbTlr/L2RXTjBjeTgyTXpB/M1pHUTUvTTJKaE5X/STNZekF3TVRSaC9O/elV3TW1VdlltOTRj/Mmh2L2RITXZhVzg1/YUhVeFl6VTMvT1hC/b1kybHBZbkl6ZHpF/dS9hbkJu"
+      "id": 3,
+      "name": "The Legend of Zelda: Tears of the Kingdom",
+      "description": "A continuação de Breath of the Wild",
+      "publisher": "Nintendo",
+      "image": "https://m.media-amazon.com/images/I/618GR0WMoQL._AC_UF1000,1000_QL80_.jpg"
     },
     {
-        "id": 5,
-        "name": "Braveheart Chronicles",
-        "description": "Um jogo beat'em up brasileiro de ação e aventura",
-        "publisher": "Laboratório.CE",
-        "image": "/assets/images/braveheart-chronicles.png"
+      "id": 4,
+      "name": "Hogwarts Legacy",
+      "description": "O jogo de Harry Potter que você sempre quis",
+      "publisher": "Warner Bros. Games",
+      "image": "https://imgs.search.brave.com/nDu6I55n4ix0Ly6O3mQxMc07H7So0hTqydPVBRpE-JU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vcHlSVWc5/WkxfTGxyWUZWOGU1/Vk1oSUc4cFhIS2Vx/dkFMLUVtTG1aYzEz/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlo/YzNObC9kSE11Ym5W/MWRtVnRMbU52L2JT/OXBiV0ZuWlM5MWNH/eHYvWVdRdmRGOWli/M2h6YUc5MC9YMkpw/Wnk5Mk1TOXdjbTlr/L2RXTjBjeTgyTXpB/M1pHUTUvTTJKaE5X/STNZekF3TVRSaC9O/elV3TW1VdlltOTRj/Mmh2L2RITXZhVzg1/YUhVeFl6VTMvT1hC/b1kybHBZbkl6ZHpF/dS9hbkJu"
+    },
+    {
+      "id": 5,
+      "name": "Braveheart Chronicles",
+      "description": "Um jogo beat'em up brasileiro de ação e aventura",
+      "publisher": "Laboratório.CE",
+      "image": "/assets/images/braveheart-chronicles.png"
     }
   ],
-  "filmes" : [
+  "filmes": [
     {
       "id": 1,
-      "name": "Ainda Estou Aqui",
-      "description": "Melhor filme do ano, injusticado por Emilia Perez",
+      "name": "Ainda Estou aqui",
+      "description": "Melhor filme do ano",
       "publisher": "Globo",
       "image": "https://upload.wikimedia.org/wikipedia/pt/5/57/Ainda_Estou_Aqui_2024_poster.jpg"
     },
@@ -59,11 +59,11 @@
       "image": "https://upload.wikimedia.org/wikipedia/pt/c/c1/The_Matrix_Poster.jpg"
     },
     {
-        "id": 4,
-        "name": "O Poderoso Chefão",
-        "description": "A história de uma família mafiosa",
-        "publisher": "Paramount Pictures",
-        "image": "https://mid-noticias.curitiba.pr.gov.br/2022/00337449.jpg"
+      "id": 4,
+      "name": "O Poderoso Chefão",
+      "description": "A história de uma família mafiosa",
+      "publisher": "Paramount Pictures",
+      "image": "https://mid-noticias.curitiba.pr.gov.br/2022/00337449.jpg"
     }
   ],
   "livros": [
@@ -89,11 +89,11 @@
       "image": "https://m.media-amazon.com/images/I/819js3EQwbL.jpg"
     },
     {
-        "id": 4,
-        "name": "Dom Casmurro",
-        "description": "Um romance brasileiro clássico de Machado de Assis",
-        "publisher": "Companhia das Letras",
-        "image": "https://m.media-amazon.com/images/I/61Z2bMhGicL.jpg"
+      "id": 4,
+      "name": "Dom Casmurro",
+      "description": "Um romance brasileiro clássico de Machado de Assis",
+      "publisher": "Companhia das Letras",
+      "image": "https://m.media-amazon.com/images/I/61Z2bMhGicL.jpg"
     }
   ]
 }

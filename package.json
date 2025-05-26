@@ -11,6 +11,7 @@
     "api": "npx json-server ./src/db/produtos.json --watch --port 3000"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.14",
     "@tailwindcss/vite": "^4.1.7",
     "aluga-jogos": "file:",
     "axios": "^1.9.0",
