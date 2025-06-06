@@ -4,7 +4,7 @@ const Card = ({ item, onDelete, onEdit }) => {
     return (
         <li className="relative flex flex-col items-center justify-center text-center px-6 py-4 gap-4 bg-(--card-color) w-80 h-120 rounded-3xl overflow-hidden shadow-lg transition-transform hover:scale-105">
             <img
-                src={item.image}
+                src={item.image_url}
                 alt={item.name}
                 className="w-40 h-60 object-cover rounded-xl mt-2"
             />
@@ -20,7 +20,7 @@ const Card = ({ item, onDelete, onEdit }) => {
                     onClick={() => onDelete(item.id)}
                 />
             </div>
-            <div className="flex flex-col gap-2 justify-around overflow-auto">
+            <div className="flex flex-col gap-2 justify-around hidden-scrollbar">
                 <h6 className="text-2xl font-bold text-(--primary-color) break-words">{item.name}</h6>
                 <p className="text-xl w-full font-semibold leading-6">{item.description}</p>
                 <p className="text-sm">{item.publisher}</p>

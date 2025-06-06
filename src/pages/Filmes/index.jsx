@@ -3,19 +3,18 @@ import Catalogo from "../../components/Catalogo";
 import Main from "../../components/Main";
 import Title from "../../components/Title";
 import ItemDialog from "../../components/Modal";
-import { crudService } from "/src/services/crudService.js";
+import { supabaseService } from "/src/services/supabaseService";
 import { useState, useEffect } from "react";
 
 const Filmes = () => {
     const [listaFilmes, setListaFilmes] = useState([]);
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [currentItem, setCurrentItem] = useState(null);
-    const endpoint = "/filmes";
+    const table = "filmes";
 
-    // Buscar todos os filmes
     const fetchFilmes = async () => {
         try {
-            const data = await crudService.getAll(endpoint);
+            const data = await supabaseService.getAll(table);
             setListaFilmes(data);
         } catch (error) {
             console.error("Erro ao buscar filmes:", error);
@@ -25,27 +24,27 @@ const Filmes = () => {
     // Deletar um filme
     const deleteFilme = async (id) => {
         try {
-            await crudService.delete(endpoint, id);
+            await supabaseService.delete(table, id);
             setListaFilmes(prev => prev.filter(item => item.id !== id));
         } catch (error) {
             console.error("Erro ao deletar filme:", error);
         }
     };
 
-    // Criar ou atualizar um filme
     const saveFilme = async (data) => {
         try {
+            const filmeData = {
+              name: data.name,
+              description: data.description,
+              publisher: data.publisher,
+              image_url: data.image_url,
+            };
+
             if (currentItem) {
-                // Abordagem alternativa: delete + create em vez de update
-                await crudService.delete(endpoint, currentItem.id);
-                const newItem = { ...data, id: currentItem.id };
-                const created = await crudService.create(endpoint, newItem);
-                setListaFilmes(prev =>
-                    prev.map(item => item.id === currentItem.id ? created : item)
-                );
+                const updated = await supabaseService.update(table, currentItem.id, filmeData);
+                setListaFilmes(prev => prev.map(item => item.id === currentItem.id ? updated : item));
             } else {
-                // Criar novo filme
-                const created = await crudService.create(endpoint, data);
+                const created = await supabaseService.create(table, filmeData);
                 setListaFilmes(prev => [...prev, created]);
             }
             setIsDialogOpen(false);
@@ -55,13 +54,11 @@ const Filmes = () => {
         }
     };
 
-    // Abrir modal para edição
     const handleEdit = (item) => {
         setCurrentItem(item);
         setIsDialogOpen(true);
     };
 
-    // Abrir modal para criação
     const handleAdd = () => {
         setCurrentItem(null);
         setIsDialogOpen(true);

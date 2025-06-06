@@ -3,18 +3,18 @@ import Catalogo from "../../components/Catalogo";
 import Main from "../../components/Main";
 import Title from "../../components/Title";
 import ItemDialog from "../../components/Modal";
-import { crudService } from "/src/services/crudService.js";
+import { supabaseService } from "/src/services/supabaseService";
 import { useState, useEffect } from "react";
 
 const Livros = () => {
     const [listaLivros, setListaLivros] = useState([]);
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [currentItem, setCurrentItem] = useState(null);
-    const endpoint = "/livros";
+    const table = "livros";
 
     const fetchLivros = async () => {
       try {
-        const data = await crudService.getAll(endpoint);
+        const data = await supabaseService.getAll(table);
         setListaLivros(data);
       } catch (error) {
         console.error("Erro ao buscar livros:", error);
@@ -23,7 +23,7 @@ const Livros = () => {
 
     const deleteLivro = async (id) => {
       try {
-        await crudService.delete(endpoint, id);
+        await supabaseService.delete(table, id);
         setListaLivros((prev) => prev.filter((item) => item.id !== id));
       } catch (error) {
         console.error("Erro ao deletar livro:", error);
@@ -32,16 +32,18 @@ const Livros = () => {
 
     const saveLivro = async (data) => {
       try {
+        const livroData = {
+          name: data.name,
+          description: data.description,
+          publisher: data.publisher,
+          image_url: data.image_url,
+        };
+
         if (currentItem) {
-          // Abordagem alternativa: delete + create em vez de update
-          await crudService.delete(endpoint, currentItem.id);
-          const newItem = { ...data, id: currentItem.id };
-          const created = await crudService.create(endpoint, newItem);
-          setListaLivros((prev) =>
-            prev.map((item) => (item.id === currentItem.id ? created : item))
-          );
+          const updated = await supabaseService.update(table, currentItem.id, livroData);
+          setListaLivros(prev => prev.map(item => item.id === currentItem.id ? updated : item));
         } else {
-          const created = await crudService.create(endpoint, data);
+          const created = await supabaseService.create(table, livroData);
           setListaLivros((prev) => [...prev, created]);
         }
         setIsDialogOpen(false);

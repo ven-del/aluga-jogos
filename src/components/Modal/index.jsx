@@ -13,7 +13,7 @@ const ItemDialog = ({
     name: "",
     description: "",
     publisher: "",
-    image: "",
+    image_url: "",
   });
 
   // Preenche o formulário com dados iniciais se estiver editando
@@ -23,7 +23,7 @@ const ItemDialog = ({
         name: initialData.name || "",
         description: initialData.description || "",
         publisher: initialData.publisher || "",
-        image: initialData.image || "",
+        image_url: initialData.image_url || "",
       });
     } else {
       // Reset form quando abrir para criar novo
@@ -31,7 +31,7 @@ const ItemDialog = ({
         name: "",
         description: "",
         publisher: "",
-        image: "",
+        image_url: "",
       });
     }
   }, [initialData, isOpen]);
@@ -109,14 +109,14 @@ const ItemDialog = ({
             </div>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="image" className="font-medium">
+              <label htmlFor="image_url" className="font-medium">
                 URL da Imagem
               </label>
               <input
                 type="url"
-                id="image"
-                name="image"
-                value={formData.image}
+                id="image_url"
+                name="image_url"
+                value={formData.image_url}
                 onChange={handleChange}
                 className="border border-gray-300 rounded px-3 py-2"
                 required
@@ -127,7 +127,7 @@ const ItemDialog = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100"
+                className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100 hover:text-black"
               >
                 Cancelar
               </button>
@@ -142,7 +142,7 @@ const ItemDialog = ({
 
           <Dialog.Close asChild>
             <button
-              className="absolute top-4 right-4 inline-flex items-center justify-center rounded-full h-6 w-6 hover:bg-gray-200"
+              className="absolute top-4 right-4 inline-flex items-center justify-center rounded-full h-6 w-6 hover:bg-gray-200 hover:text-black"
               aria-label="Fechar"
             >
               <RxCross2 />
